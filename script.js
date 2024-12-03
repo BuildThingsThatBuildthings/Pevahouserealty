@@ -56,34 +56,6 @@ function showTestimonial() {
 showTestimonial();
 setInterval(showTestimonial, 5000);
 
-// Form Submission
-const contactForm = document.getElementById('contact-form');
-
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    // Here you would typically send the form data to your backend
-    // For now, we'll just show a success message
-    const formData = new FormData(contactForm);
-    const submitButton = contactForm.querySelector('button[type="submit"]');
-    
-    try {
-        submitButton.disabled = true;
-        submitButton.textContent = 'Sending...';
-        
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
-    } catch (error) {
-        alert('There was an error sending your message. Please try again.');
-    } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = 'Send Message';
-    }
-});
-
 // Navbar Scroll Effect
 const header = document.querySelector('.header');
 let lastScroll = 0;

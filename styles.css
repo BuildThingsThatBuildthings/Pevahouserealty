@@ -280,9 +280,8 @@ body {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 4rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-form {
@@ -305,36 +304,8 @@ body {
     resize: vertical;
 }
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.info-item i {
-    font-size: 1.5rem;
-    color: var(--accent-color);
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.social-links a {
-    color: var(--text-color);
-    font-size: 1.5rem;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    color: var(--accent-color);
+.contact-form button {
+    margin-top: 1rem;
 }
 
 /* Footer */

@@ -32,8 +32,7 @@
             <h1>Your Nashville Real Estate Expert: Connecting Buyers and Sellers with Care.</h1>
             <p>With unmatched local knowledge and a passion for people, I help buyers find their dream homes and sellers achieve their goals—every time.</p>
             <div class="cta-buttons">
-                <button class="cta-button primary">Find Your Perfect Home</button>
-                <button class="cta-button secondary">Get Your Home Sold Fast</button>
+                <a href="work-with-us.html" class="cta-button primary">Work With Us</a>
             </div>
         </div>
     </section>
@@ -125,34 +124,22 @@
         <div class="container">
             <h2>Let's make your Nashville real estate dreams a reality</h2>
             <div class="contact-content">
-                <form id="contact-form" class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <input type="tel" placeholder="Phone Number">
-                    <select required>
+                <form action="https://formsubmit.co/james@pevahouserealty.com" method="POST" class="contact-form">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission">
+                    <input type="hidden" name="_next" value="https://pevahouserealty.com/thank-you">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <select name="interest" required>
                         <option value="">I'm interested in...</option>
                         <option value="buying">Buying a Home</option>
                         <option value="selling">Selling a Home</option>
                         <option value="both">Both</option>
                     </select>
-                    <textarea placeholder="Your Message"></textarea>
+                    <textarea name="message" placeholder="Your Message"></textarea>
                     <button type="submit" class="cta-button primary">Send Message</button>
                 </form>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>Call or Text: <a href="tel:+1234567890">(123) 456-7890</a></p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>Email: <a href="mailto:james@pevahouserealty.com">james@pevahouserealty.com</a></p>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
